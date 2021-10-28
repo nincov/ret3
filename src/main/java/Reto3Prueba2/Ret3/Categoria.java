@@ -12,9 +12,10 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import org.springframework.data.annotation.Id;
+
 
 /**
  *
@@ -23,7 +24,6 @@ import org.springframework.data.annotation.Id;
 @Entity
 @Table(name = "category")
 public class Categoria implements Serializable {
-   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
